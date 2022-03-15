@@ -160,5 +160,10 @@ LOGGING = {
             'level': 'DEBUG',
             'propagate': False,
         },
+        'jangle.schedule': {
+            'handlers': ['console'],
+            'level': 'INFO',
+            'propagate': False,
+        },
     },
 }

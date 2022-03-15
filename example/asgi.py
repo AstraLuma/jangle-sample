@@ -12,11 +12,8 @@ import os
 from django.core.asgi import get_asgi_application
 from jangle import Bot_ProtocolTypeRouter
 
-from demobot.consumers import DiscordConsumer
-
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'example.settings')
 
 application = Bot_ProtocolTypeRouter({
     'http': get_asgi_application(),
-    'discord': DiscordConsumer.as_asgi(),
 })
